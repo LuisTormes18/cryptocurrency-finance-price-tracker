@@ -1,10 +1,14 @@
 import React from "react";
 
-function Coin({ name, image, symbol, current_price,
-market_cap,price_change_percentage_24h
-, 
-total_volume
- }) {
+function Coin({
+    name,
+    image,
+    symbol,
+    current_price,
+    market_cap,
+    price_change_percentage_24h,
+    total_volume,
+}) {
     return (
         <tr>
             <td className="coin">
@@ -18,19 +22,17 @@ total_volume
                 <span>${current_price}</span>
             </td>
             {price_change_percentage_24h < 0 ? (
-<td className='red'>${price_change_percentage_24h.toFixed(2)}5</td>
-
-                ):(
-
-<td className='green'>${price_change_percentage_24h.toFixed(2)}%</td>
-                )}
-            <td>{
-total_volume
-}</td>
+                <td className="red">
+                    ${price_change_percentage_24h.toFixed(2)}5
+                </td>
+            ) : (
+                <td className="green">
+                    ${price_change_percentage_24h.toFixed(2)}%
+                </td>
+            )}
+            <td>{total_volume}</td>
             <td>
-                <span>{
-market_cap
-}</span>
+                <span>{market_cap}</span>
             </td>
         </tr>
     );
