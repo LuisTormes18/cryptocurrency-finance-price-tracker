@@ -19,4 +19,4 @@ If you want to see the demo of this project deployed, you can visit [Demo of the
 ## Built with 🛠️
 
 * [React](https://es.reactjs.org/) - The web framework used
-* [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Style Manager
+* [CSS](https://developer.mozilla.org/es/docs/Web/CSS) - Style manager
