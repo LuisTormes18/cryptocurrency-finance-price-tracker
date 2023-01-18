@@ -41,19 +41,24 @@ function App() {
 
   return (
     <div className="coin-app">
-      <div className="coin-search">
-        <div>
-          <h1>Search a Currency</h1>
+    <header>
+        <div className="coin-search">
           <form>
             <input
               type="text"
               name="search"
               value={search}
-              placeholder="search"
+              placeholder="Search a Coin"
               onChange={handleSearch}
             />
           </form>
+
         </div>
+         <div className="coin-buttons">
+          <button onClick={previousPage}>{"<"}</button>
+          <button onClick={nextPage}>{">"}</button>
+        </div>
+        </header>
         <table>
           <thead>
             <tr>
@@ -71,11 +76,9 @@ function App() {
             ))}
           </tbody>
         </table>
-        <div>
-          <button onClick={previousPage}>Previous</button>
-          <button onClick={nextPage}>Next</button>
-        </div>
-      </div>
+
+       
+
     </div>
   );
 }

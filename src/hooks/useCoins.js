@@ -17,5 +17,5 @@ export const useCoins = () => {
   //   setFilteredCoins(filtered);
   // }, [search]);
 
-  return { coins, search, handleSearch, isLoading };
+  return { coins, isLoading };
 };
